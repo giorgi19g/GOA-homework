@@ -1,0 +1,1 @@
+print("giorgi gogiashvili 14 wlis nino xinkali")
