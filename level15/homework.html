@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>სარეგისტრაციო ფორმა</title>
+    <title>გადახდის ფორმა</title>
 </head>
 <body>
-    <h1>რეგისტრაცია</h1>
-    <form action="/submit" method="post">
-        <label for="username">მომხმარებლის სახელი:</label>
-        <input type="text" id="username" name="username" value="" required>
-        <br><br>
+    <h1>გადახდის მეთოდი</h1>
+    <form action="/submit-payment" method="post">
+        <label>
+            <input type="radio" name="payment-method" value="card" required>
+            საბანკო ბარათი
+        </label>
+        <br>
 
-        <label for="email">ელ-ფოსტა:</label>
-        <input type="email" id="email" name="email" value="" required>
-        <br><br>
-
-        <label for="password">პაროლი:</label>
-        <input type="password" id="password" name="password" value="" required>
+        <label>
+            <input type="radio" name="payment-method" value="cash" required>
+            ნაღდი ფული
+        </label>
         <br><br>
 
         <button type="submit">გაგზავნა</button>
